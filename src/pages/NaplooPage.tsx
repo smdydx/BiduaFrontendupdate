@@ -689,6 +689,70 @@ export default function NaplooPage() {
         </div>
       </section>
 
+      {/* Stay Affordable Section */}
+      <section className="py-20 bg-gradient-to-b from-background to-primary">
+        <div className="container mx-auto px-4">
+          <motion.div 
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Stay Affordable</h2>
+            <div className="w-24 h-1 bg-secondary mx-auto mb-8"></div>
+            <p className="text-lg max-w-3xl mx-auto">
+              Accommodation does not have to cost an exorbitant amount. Now everyone can afford a clean and comfortable place to stay, complete with top-notch services and facilities.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="space-y-6"
+            >
+              <div className="bg-card p-6 rounded-lg">
+                <ul className="space-y-4">
+                  <li className="flex items-start">
+                    <Check className="text-secondary mr-2 mt-1 flex-shrink-0" />
+                    <span>Premium comfort at budget-friendly rates</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Check className="text-secondary mr-2 mt-1 flex-shrink-0" />
+                    <span>Pay only for the hours you need</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Check className="text-secondary mr-2 mt-1 flex-shrink-0" />
+                    <span>No hidden charges or extra fees</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Check className="text-secondary mr-2 mt-1 flex-shrink-0" />
+                    <span>Smart amenities included in base price</span>
+                  </li>
+                </ul>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="rounded-xl overflow-hidden shadow-2xl"
+            >
+              <img 
+                src="/attached_assets/image_1746605592399.png"
+                alt="Affordable Naploo Pod"
+                className="w-full h-full object-cover"
+              />
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-16 bg-primary">
         <div className="container mx-auto px-4">
