@@ -1,23 +1,14 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
-import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 
 export default defineConfig({
   assetsInclude: ['**/*.jpeg'],
   server: {
     host: "0.0.0.0",
-    port: 5173,
-    hmr: {
-      clientPort: 443
-    },
-    allowedHosts: [
-      "47eead9e-92ae-4211-9bb2-9311d03d1738-00-124wsa9was5me.sisko.replit.dev",
-      "biduafrontendupdate.onrender.com"
-
-    ]
+    port: 5173
   },
-  plugins: [react(), runtimeErrorOverlay()],
+  plugins: [react()],
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "src"),
@@ -30,7 +21,7 @@ export default defineConfig({
     outDir: path.resolve(import.meta.dirname, "dist/public"),
     emptyOutDir: true,
     rollupOptions: {
-      external: ['class-variance-authority'],
+      external: [],
       output: {
         manualChunks: {
           // Split vendor libraries into a separate chunk
@@ -40,6 +31,6 @@ export default defineConfig({
         },
       },
     },
-    chunkSizeWarningLimit: 1000, // Increase the warning limit to 1000 kB
+  
   },
 });
