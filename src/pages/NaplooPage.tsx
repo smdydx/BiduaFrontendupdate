@@ -178,6 +178,83 @@ export default function NaplooPage() {
         </div>
       </section>
 
+      {/* Pod Designs Gallery */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <motion.div 
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Explore Our Pod Designs</h2>
+            <div className="w-24 h-1 bg-secondary mx-auto mb-8"></div>
+            <p className="text-lg max-w-3xl mx-auto">
+              Experience luxury and comfort in our state-of-the-art sleeping pods
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                image: "https://images.squarespace-cdn.com/content/v1/5d9e5e58d36b747659e47b0f/1574787502568-KP4LZTH7RBQ4FZFO93L1/sleeping+pod+dimensions.png",
+                title: "Spacious Interior Design",
+                description: "Ergonomically designed interior with ample space for comfortable rest"
+              },
+              {
+                image: "https://img.freepik.com/premium-photo/futuristic-sleeping-pod-capsule-hotel-3d-render_252025-308.jpg",
+                title: "Futuristic Pod Experience",
+                description: "Modern amenities with smart lighting and entertainment systems"
+              },
+              {
+                image: "https://i.pinimg.com/originals/fb/d9/c4/fbd9c47d0bf683ef4761755362d46941.jpg",
+                title: "Premium Comfort",
+                description: "High-quality mattress and bedding for ultimate relaxation"
+              },
+              {
+                image: "https://static.dezeen.com/uploads/2016/10/sleep-box-moscow-airport-arch-group_dezeen_2364_ss_1-852x608.jpg",
+                title: "Airport Sleep Pod",
+                description: "Perfect for transit passengers seeking quick rest"
+              },
+              {
+                image: "https://media.timeout.com/images/105793281/image.jpg",
+                title: "Business Pod",
+                description: "Equipped with work desk and charging stations"
+              },
+              {
+                image: "https://static.straitstimes.com.sg/s3fs-public/articles/2019/08/21/st_20190821_lcpod21_5135272.jpg",
+                title: "Premium Single Pod",
+                description: "Private space with enhanced soundproofing"
+              }
+            ].map((pod, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: index * 0.1 }}
+                className="group relative rounded-xl overflow-hidden shadow-lg"
+              >
+                <div className="aspect-w-16 aspect-h-9">
+                  <img 
+                    src={pod.image} 
+                    alt={pod.title}
+                    className="w-full h-[300px] object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-90">
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <h3 className="text-xl font-bold text-white mb-2">{pod.title}</h3>
+                    <p className="text-white/80">{pod.description}</p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Pod Features Section */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
