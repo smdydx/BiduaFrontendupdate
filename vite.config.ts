@@ -14,6 +14,7 @@ export default defineConfig({
     allowedHosts: [
       "47eead9e-92ae-4211-9bb2-9311d03d1738-00-124wsa9was5me.sisko.replit.dev",
       "biduafrontendupdate.onrender.com"
+
     ]
   },
   plugins: [react(), runtimeErrorOverlay()],
