@@ -2,33 +2,51 @@ import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { Check, Clock, Shield, Heart, Award ,Sparkles, MonitorSmartphone, Wifi, BatteryCharging, ThermometerSnowflake, LockKeyhole, BedDouble, ShieldCheck, Star } from "lucide-react";
-import mainImage from '../assets/NaplooImg/main.jpeg';
-import img1 from '../assets/NaplooImg/1.jpg';
-import img2 from '../assets/NaplooImg/2.jpg';
-import img3 from '../assets/NaplooImg/3.jpg';
+import {
+  Check,
+  Clock,
+  Shield,
+  Heart,
+  Award,
+  Sparkles,
+  MonitorSmartphone,
+  Wifi,
+  BatteryCharging,
+  ThermometerSnowflake,
+  LockKeyhole,
+  BedDouble,
+  ShieldCheck,
+  Star,
+} from "lucide-react";
+import mainImage from "../assets/NaplooImg/main.jpeg";
+import img1 from "../assets/NaplooImg/1.jpg";
+import img2 from "../assets/NaplooImg/2.jpg";
+import img3 from "../assets/NaplooImg/3.jpg";
 // import img4 from '../assets/NaplooImg/4.jpg';
-import img5 from '../assets/NaplooImg/5.jpg';
-import img6 from '../assets/NaplooImg/6.jpg';
-import img7 from '../assets/NaplooImg/7.jpg';
-import img8 from '../assets/NaplooImg/8.jpg';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import img5 from "../assets/NaplooImg/5.jpg";
+import img6 from "../assets/NaplooImg/6.jpg";
+import img7 from "../assets/NaplooImg/7.jpg";
+import img8 from "../assets/NaplooImg/8.jpg";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 export default function NaplooPage() {
-  
   return (
     <>
       <Helmet>
         <title>Naploo™ – Your Private Space, Anytime | BIDUA Industries</title>
-        <meta name="description" content="Experience Naploo™, the modern way to rest — affordable, private, and luxurious capsule hotels brought to you by BIDUA Industries Pvt Ltd." />
-        <meta name="keywords" content="Naploo, pod hotels, capsule hotels, sleeping pods, hourly stay, rest pods, BIDUA" />
+        <meta
+          name="description"
+          content="Experience Naploo™, the modern way to rest — affordable, private, and luxurious capsule hotels brought to you by BIDUA Industries Pvt Ltd."
+        />
+        <meta
+          name="keywords"
+          content="Naploo, pod hotels, capsule hotels, sleeping pods, hourly stay, rest pods, BIDUA"
+        />
       </Helmet>
-
-      
 
       {/* Hero Section */}
       <section className="pt-24 pb-16 bg-gradient-to-b from-background to-primary">
@@ -40,38 +58,44 @@ export default function NaplooPage() {
               transition={{ duration: 0.5 }}
             >
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                <span className="text-secondary">Naploo™</span> – Your Private Space, Anytime
+                <span className="text-secondary">Naploo™</span> – Your Private
+                Space, Anytime
               </h1>
               <h2 className="text-xl md:text-2xl mb-8 font-light">
                 Recharge. Relax. Refresh.
               </h2>
               <p className="text-lg mb-8">
-                Experience Naploo™, the modern way to rest — affordable, private, and luxurious capsule hotels brought to you by BIDUA Industries Pvt Ltd.
+                Experience Naploo™, the modern way to rest — affordable,
+                private, and luxurious capsule hotels brought to you by BIDUA
+                Industries Pvt Ltd.
               </p>
               <p className="text-lg mb-10">
-                Wherever life takes you — airport, highway, hospital, tourist spot, railway station — your Naploo™ Pod awaits.
+                Wherever life takes you — airport, highway, hospital, tourist
+                spot, railway station — your Naploo™ Pod awaits.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button size="lg">Book a Pod Stay</Button>
                 <Link href="/investor">
-                  <Button variant="outline" size="lg">Invest in Naploo™</Button>
+                  <Button variant="outline" size="lg">
+                    Invest in Naploo™
+                  </Button>
                 </Link>
               </div>
             </motion.div>
             <motion.div
-             initial={{ opacity: 0, scale: 0.95 }}
-             animate={{ opacity: 1, scale: 1 }}
-             transition={{ duration: 0.6, ease: "easeOut" }}
-             className="p-1.5 rounded-2xl bg-gradient-to-r from-[hsl(142,53%,22%)] via-green-300 "
-             >
-             <div className="overflow-hidden rounded-2xl">
-             <img 
-             src={mainImage} 
-             alt="Naploo Pod Hotel" 
-             className="w-full h-full object-cover rounded-2xl hover:scale-110 transition-transform duration-700 ease-in-out"
-             />
-             </div>
-             </motion.div>
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              className="p-1.5 rounded-2xl bg-gradient-to-r from-[hsl(142,53%,22%)] via-green-300 "
+            >
+              <div className="overflow-hidden rounded-2xl">
+                <img
+                  src={mainImage}
+                  alt="Naploo Pod Hotel"
+                  className="w-full h-full object-cover rounded-2xl hover:scale-110 transition-transform duration-700 ease-in-out"
+                />
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -79,17 +103,20 @@ export default function NaplooPage() {
       {/* Reception Section */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <motion.div 
+          <motion.div
             className="text-center mb-16"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Futuristic Reception Area</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Futuristic Reception Area
+            </h2>
             <div className="w-24 h-1 bg-secondary mx-auto mb-8"></div>
             <p className="text-lg max-w-3xl mx-auto">
-              Step into the future with our cutting-edge reception space featuring hexagonal lighting and smart amenities
+              Step into the future with our cutting-edge reception space
+              featuring hexagonal lighting and smart amenities
             </p>
           </motion.div>
 
@@ -101,15 +128,21 @@ export default function NaplooPage() {
               transition={{ duration: 0.5 }}
               className="p-6 bg-card rounded-xl"
             >
-              <h3 className="text-2xl font-bold mb-4">Sci-Fi Inspired Design</h3>
+              <h3 className="text-2xl font-bold mb-4">
+                Sci-Fi Inspired Design
+              </h3>
               <ul className="space-y-4">
                 <li className="flex items-start">
                   <Check className="text-secondary mr-2 mt-1 flex-shrink-0" />
-                  <span>Geometric hexagonal ceiling pattern with LED lighting</span>
+                  <span>
+                    Geometric hexagonal ceiling pattern with LED lighting
+                  </span>
                 </li>
                 <li className="flex items-start">
                   <Check className="text-secondary mr-2 mt-1 flex-shrink-0" />
-                  <span>Smart digital check-in kiosks with blue accent lighting</span>
+                  <span>
+                    Smart digital check-in kiosks with blue accent lighting
+                  </span>
                 </li>
                 <li className="flex items-start">
                   <Check className="text-secondary mr-2 mt-1 flex-shrink-0" />
@@ -129,8 +162,8 @@ export default function NaplooPage() {
               transition={{ duration: 0.5 }}
               className="rounded-xl overflow-hidden shadow-2xl"
             >
-              <img 
-                src="/attached_assets/image_1746604463368.png"
+              <img
+                src="../assets/NaplooImg/1.jpg"
                 alt="Naploo Futuristic Reception"
                 className="w-full h-[400px] object-cover"
               />
@@ -143,7 +176,9 @@ export default function NaplooPage() {
               className="space-y-6"
             >
               <div className="bg-card p-6 rounded-lg">
-                <h3 className="text-xl font-bold mb-4">Modern Check-in Experience</h3>
+                <h3 className="text-xl font-bold mb-4">
+                  Modern Check-in Experience
+                </h3>
                 <ul className="space-y-3">
                   <li className="flex items-start">
                     <Check className="text-secondary mr-2 mt-1 flex-shrink-0" />
@@ -168,8 +203,8 @@ export default function NaplooPage() {
               transition={{ duration: 0.5 }}
               className="rounded-2xl overflow-hidden shadow-2xl"
             >
-              <img 
-                src="/attached_assets/image_1746604463368.png"
+              <img
+                src="../assets/NaplooImg/2.jpg"
                 alt="Naploo Futuristic Reception"
                 className="w-full h-full object-cover"
               />
@@ -181,52 +216,62 @@ export default function NaplooPage() {
       {/* Pod Designs Gallery */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <motion.div 
+          <motion.div
             className="text-center mb-16"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Explore Our Pod Designs</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Explore Our Pod Designs
+            </h2>
             <div className="w-24 h-1 bg-secondary mx-auto mb-8"></div>
             <p className="text-lg max-w-3xl mx-auto">
-              Experience luxury and comfort in our state-of-the-art sleeping pods
+              Experience luxury and comfort in our state-of-the-art sleeping
+              pods
             </p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                image: "/attached_assets/WhatsApp Image 2025-04-26 at 12.25.07 PM.jpeg",
+                image:
+                  "../assets/NaplooImg/3.jpg",
                 title: "Luxury Pod Design",
-                description: "Premium comfort with modern amenities for the perfect rest"
+                description:
+                  "Premium comfort with modern amenities for the perfect rest",
               },
               {
-                image: "/attached_assets/WhatsApp Image 2025-04-26 at 12.25.07 PM (1).jpeg",
+                image:
+                  "../assets/NaplooImg/4.jpg",
                 title: "Smart Pod Experience",
-                description: "Integrated technology for a seamless stay"
+                description: "Integrated technology for a seamless stay",
               },
               {
-                image: "/attached_assets/WhatsApp Image 2025-04-26 at 12.25.07 PM (2).jpeg",
+                image: "../assets/NaplooImg/5.jpg",
                 title: "Executive Pod",
-                description: "Designed for business travelers with work facilities"
+                description:
+                  "Designed for business travelers with work facilities",
               },
               {
-                image: "/attached_assets/WhatsApp Image 2025-04-26 at 12.25.08 PM.jpeg",
+                image:
+                  "../assets/NaplooImg/6.jpg",
                 title: "Premium Rest Pod",
-                description: "Enhanced comfort with climate control"
+                description: "Enhanced comfort with climate control",
               },
               {
-                image: "/attached_assets/WhatsApp Image 2025-04-26 at 12.25.08 PM (1).jpeg",
+                image:
+                  "../assets/NaplooImg/7.jpg",
                 title: "Deluxe Sleep Pod",
-                description: "Spacious interior with luxury furnishings"
+                description: "Spacious interior with luxury furnishings",
               },
               {
-                image: "/attached_assets/WhatsApp Image 2025-04-26 at 12.25.08 PM (2).jpeg",
+                image:
+                  "../assets/NaplooImg/8.jpg",
                 title: "Elite Pod Suite",
-                description: "Our most premium pod experience"
-              }
+                description: "Our most premium pod experience",
+              },
             ].map((pod, index) => (
               <motion.div
                 key={index}
@@ -237,15 +282,17 @@ export default function NaplooPage() {
                 className="group relative rounded-xl overflow-hidden shadow-lg"
               >
                 <div className="aspect-w-16 aspect-h-9">
-                  <img 
-                    src={pod.image} 
+                  <img
+                    src={pod.image}
                     alt={pod.title}
                     className="w-full h-[300px] object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-90">
                   <div className="absolute bottom-0 left-0 right-0 p-6">
-                    <h3 className="text-xl font-bold text-white mb-2">{pod.title}</h3>
+                    <h3 className="text-xl font-bold text-white mb-2">
+                      {pod.title}
+                    </h3>
                     <p className="text-white/80">{pod.description}</p>
                   </div>
                 </div>
@@ -258,17 +305,20 @@ export default function NaplooPage() {
       {/* Pod Features Section */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <motion.div 
+          <motion.div
             className="text-center mb-16"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Inside Your Naploo™ Pod</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Inside Your Naploo™ Pod
+            </h2>
             <div className="w-24 h-1 bg-secondary mx-auto mb-8"></div>
             <p className="text-lg max-w-3xl mx-auto">
-              Every Naploo™ Pod is a secure, private space packed with luxury, technology, and comfort.
+              Every Naploo™ Pod is a secure, private space packed with luxury,
+              technology, and comfort.
             </p>
           </motion.div>
 
@@ -277,48 +327,48 @@ export default function NaplooPage() {
               {
                 icon: Sparkles,
                 title: "Ambient Mood Lighting",
-                description: "Customize your pod's lighting to suit your mood"
+                description: "Customize your pod's lighting to suit your mood",
               },
               {
                 icon: Star,
                 title: "Private Mirror",
-                description: "Freshen up in the privacy of your own pod"
+                description: "Freshen up in the privacy of your own pod",
               },
               {
                 icon: MonitorSmartphone,
                 title: "Smart TV with Headphones",
-                description: "Enjoy entertainment without disturbing others"
+                description: "Enjoy entertainment without disturbing others",
               },
               {
                 icon: Wifi,
                 title: "WiFi Connectivity",
-                description: "Stay connected with high-speed internet"
+                description: "Stay connected with high-speed internet",
               },
               {
                 icon: BatteryCharging,
                 title: "Charging Ports",
-                description: "Keep all your devices powered up"
+                description: "Keep all your devices powered up",
               },
               {
                 icon: ThermometerSnowflake,
                 title: "Climate Control",
-                description: "Adjust temperature to your comfort (AC/Heater)"
+                description: "Adjust temperature to your comfort (AC/Heater)",
               },
               {
                 icon: LockKeyhole,
                 title: "Personal In-Pod Locker",
-                description: "Secure storage for your valuables"
+                description: "Secure storage for your valuables",
               },
               {
                 icon: BedDouble,
                 title: "High-Quality Mattress",
-                description: "Premium comfort for the perfect rest"
+                description: "Premium comfort for the perfect rest",
               },
               {
                 icon: ShieldCheck,
                 title: "Fireproof & Soundproof",
-                description: "Safe and quiet environment"
-              }
+                description: "Safe and quiet environment",
+              },
             ].map((feature, index) => (
               <motion.div
                 key={index}
@@ -337,7 +387,7 @@ export default function NaplooPage() {
             ))}
           </div>
 
-          <motion.div 
+          <motion.div
             className="mt-12 p-6 bg-primary bg-opacity-20 rounded-lg border border-secondary"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -347,8 +397,13 @@ export default function NaplooPage() {
             <div className="flex items-start">
               <Shield className="text-secondary text-xl mt-1 mr-4 flex-shrink-0" />
               <div>
-                <h3 className="text-xl font-bold mb-2">Sanitization Guarantee</h3>
-                <p>Pods are deep-cleaned after every use for complete hygiene and safety.</p>
+                <h3 className="text-xl font-bold mb-2">
+                  Sanitization Guarantee
+                </h3>
+                <p>
+                  Pods are deep-cleaned after every use for complete hygiene and
+                  safety.
+                </p>
               </div>
             </div>
           </motion.div>
@@ -358,14 +413,16 @@ export default function NaplooPage() {
       {/* Hotel Facilities Section */}
       <section className="py-20 bg-gradient-to-b from-background to-primary">
         <div className="container mx-auto px-4">
-          <motion.div 
+          <motion.div
             className="text-center mb-16"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Naploo™ Hotel Facilities</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Naploo™ Hotel Facilities
+            </h2>
             <div className="w-24 h-1 bg-secondary mx-auto mb-8"></div>
           </motion.div>
 
@@ -377,71 +434,71 @@ export default function NaplooPage() {
               transition={{ duration: 0.5 }}
               className="p-1.5 rounded-2xl bg-gradient-to-r from-[hsl(142,53%,22%)] via-green-300 "
             >
-   <Swiper
-    modules={[Navigation, Pagination, Autoplay]}
-    navigation
-    pagination={{ clickable: true }}
-    autoplay={{ delay: 3000 }}
-    loop={true}
-    className="h-full w-full rounded-2xl"
-  >
-    <SwiperSlide>
-      <img 
-        src={img1}
-        alt="Naploo Hotel Facility 1"
-        className="w-full h-full object-cover"
-      />
-    </SwiperSlide>
-    <SwiperSlide>
-      <img 
-        src={img2}
-        alt="Naploo Hotel Facility 2"
-        className="w-full h-full object-cover"
-      />
-    </SwiperSlide>
-    <SwiperSlide>
-      <img 
-        src={img3}
-        alt="Naploo Hotel Facility 3"
-        className="w-full h-full object-cover"
-      />
-    </SwiperSlide>
-    {/* <SwiperSlide>
+              <Swiper
+                modules={[Navigation, Pagination, Autoplay]}
+                navigation
+                pagination={{ clickable: true }}
+                autoplay={{ delay: 3000 }}
+                loop={true}
+                className="h-full w-full rounded-2xl"
+              >
+                <SwiperSlide>
+                  <img
+                    src={img1}
+                    alt="Naploo Hotel Facility 1"
+                    className="w-full h-full object-cover"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src={img2}
+                    alt="Naploo Hotel Facility 2"
+                    className="w-full h-full object-cover"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src={img3}
+                    alt="Naploo Hotel Facility 3"
+                    className="w-full h-full object-cover"
+                  />
+                </SwiperSlide>
+                {/* <SwiperSlide>
       <img 
         src=""
         alt="Naploo Hotel Facility 1"
         className="w-full h-full object-cover"
       />
     </SwiperSlide> */}
-    <SwiperSlide>
-      <img 
-        src={img5}
-        alt="Naploo Hotel Facility 2"
-        className="w-full h-full object-cover"
-      />
-    </SwiperSlide>
-    <SwiperSlide>
-      <img 
-        src={img6}
-        alt="Naploo Hotel Facility 3"
-        className="w-full h-full object-cover"
-      />
-    </SwiperSlide>
-    <SwiperSlide>
-      <img 
-        src={img7}
-        alt="Naploo Hotel Facility 1"
-        className="w-full h-full object-cover"
-      />
-    </SwiperSlide>
-    <SwiperSlide>
-      <img 
-        src={img8}
-        alt="Naploo Hotel Facility 2"
-        className="w-full h-full object-cover"
-      />
-    </SwiperSlide>
-  </Swiper>
+                <SwiperSlide>
+                  <img
+                    src={img5}
+                    alt="Naploo Hotel Facility 2"
+                    className="w-full h-full object-cover"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src={img6}
+                    alt="Naploo Hotel Facility 3"
+                    className="w-full h-full object-cover"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src={img7}
+                    alt="Naploo Hotel Facility 1"
+                    className="w-full h-full object-cover"
+                  />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    src={img8}
+                    alt="Naploo Hotel Facility 2"
+                    className="w-full h-full object-cover"
+                  />
+                </SwiperSlide>
+              </Swiper>
             </motion.div>
 
             <div className="space-y-6">
@@ -488,7 +545,9 @@ export default function NaplooPage() {
                   </li>
                   <li className="flex items-start">
                     <Check className="text-secondary mr-2 mt-1 flex-shrink-0" />
-                    <span>Wheelchair Accessible Toilets (selected properties)</span>
+                    <span>
+                      Wheelchair Accessible Toilets (selected properties)
+                    </span>
                   </li>
                 </ul>
               </motion.div>
@@ -500,7 +559,9 @@ export default function NaplooPage() {
                 transition={{ duration: 0.4, delay: 0.2 }}
                 className="bg-card p-6 rounded-lg"
               >
-                <h3 className="text-xl font-bold mb-4">Naploo Café & Business Lounge</h3>
+                <h3 className="text-xl font-bold mb-4">
+                  Naploo Café & Business Lounge
+                </h3>
                 <ul className="space-y-2">
                   <li className="flex items-start">
                     <Check className="text-secondary mr-2 mt-1 flex-shrink-0" />
@@ -524,17 +585,20 @@ export default function NaplooPage() {
       {/* Pricing Section */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <motion.div 
+          <motion.div
             className="text-center mb-16"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Flexible Booking</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Flexible Booking
+            </h2>
             <div className="w-24 h-1 bg-secondary mx-auto mb-8"></div>
             <p className="text-lg max-w-3xl mx-auto">
-              Book for 1 Hour or More. Discounted Rates for Longer Stays. Instant Booking through Naploo™ App or Website.
+              Book for 1 Hour or More. Discounted Rates for Longer Stays.
+              Instant Booking through Naploo™ App or Website.
             </p>
           </motion.div>
 
@@ -609,7 +673,9 @@ export default function NaplooPage() {
                     <span>10% Discount on Additional Hours</span>
                   </li>
                 </ul>
-                <Button variant="secondary" className="w-full">Book Double Pod</Button>
+                <Button variant="secondary" className="w-full">
+                  Book Double Pod
+                </Button>
               </div>
             </motion.div>
           </div>
@@ -635,17 +701,20 @@ export default function NaplooPage() {
       {/* Locations Section */}
       <section className="py-20 bg-gradient-to-b from-background to-primary">
         <div className="container mx-auto px-4">
-          <motion.div 
+          <motion.div
             className="text-center mb-16"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Naploo™ Locations</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Naploo™ Locations
+            </h2>
             <div className="w-24 h-1 bg-secondary mx-auto mb-8"></div>
             <p className="text-lg max-w-3xl mx-auto">
-              Launching across major locations. Wherever you are tired, a Naploo™ Pod is nearby.
+              Launching across major locations. Wherever you are tired, a
+              Naploo™ Pod is nearby.
             </p>
           </motion.div>
 
@@ -653,29 +722,34 @@ export default function NaplooPage() {
             {[
               {
                 title: "Major Airports",
-                image: "https://images.unsplash.com/photo-1530521954074-e64f6810b32d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                image:
+                  "https://images.unsplash.com/photo-1530521954074-e64f6810b32d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
               },
               {
                 title: "Highways and Rest Stops",
-                image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
-
+                image:
+                  "https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
               },
               {
                 title: "Railway Stations",
-                image: "https://images.unsplash.com/photo-1474487548417-781cb71495f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1084&q=80"
+                image:
+                  "https://images.unsplash.com/photo-1474487548417-781cb71495f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1084&q=80",
               },
               {
                 title: "Tourist Hubs",
-                image: "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                image:
+                  "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
               },
               {
                 title: "Corporate Business Districts",
-                image: "https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80"
+                image:
+                  "https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80",
               },
               {
                 title: "Hospitals",
-                image: "https://images.unsplash.com/photo-1538108149393-fbbd81895907?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1128&q=80"
-              }
+                image:
+                  "https://images.unsplash.com/photo-1538108149393-fbbd81895907?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1128&q=80",
+              },
             ].map((location, index) => (
               <motion.div
                 key={index}
@@ -685,14 +759,16 @@ export default function NaplooPage() {
                 transition={{ duration: 0.4, delay: index * 0.1 }}
                 className="group relative rounded-lg overflow-hidden h-48"
               >
-                <img 
-                  src={location.image} 
-                  alt={location.title} 
+                <img
+                  src={location.image}
+                  alt={location.title}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary to-transparent opacity-70"></div>
                 <div className="absolute bottom-0 left-0 right-0 p-4">
-                  <h3 className="text-xl font-bold text-white">{location.title}</h3>
+                  <h3 className="text-xl font-bold text-white">
+                    {location.title}
+                  </h3>
                 </div>
               </motion.div>
             ))}
@@ -703,14 +779,16 @@ export default function NaplooPage() {
       {/* Why Choose Section */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <motion.div 
+          <motion.div
             className="text-center mb-16"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Why Choose Naploo™?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Why Choose Naploo™?
+            </h2>
             <div className="w-24 h-1 bg-secondary mx-auto mb-8"></div>
           </motion.div>
 
@@ -719,33 +797,33 @@ export default function NaplooPage() {
               {
                 icon: Heart,
                 title: "Total Privacy & Comfort",
-                description: "Your own secure space, complete with privacy"
+                description: "Your own secure space, complete with privacy",
               },
               {
                 icon: Star,
                 title: "Affordable Luxury Pricing",
-                description: "5-star experience at budget-friendly rates"
+                description: "5-star experience at budget-friendly rates",
               },
               {
                 icon: Clock,
                 title: "Flexible Stay Timing",
-                description: "Book for exactly the hours you need"
+                description: "Book for exactly the hours you need",
               },
               {
                 icon: Shield,
                 title: "Smart, Tech-Enabled Stay",
-                description: "Modern amenities for the digital traveler"
+                description: "Modern amenities for the digital traveler",
               },
               {
                 icon: Award,
                 title: "Global Payment Options",
-                description: "Pay your way - cash, card, UPI, or crypto"
+                description: "Pay your way - cash, card, UPI, or crypto",
               },
               {
                 icon: Check,
                 title: "Instant Check-in/Check-out",
-                description: "No waiting in lines, just scan and enter"
-              }
+                description: "No waiting in lines, just scan and enter",
+              },
             ].map((feature, index) => (
               <motion.div
                 key={index}
@@ -769,17 +847,21 @@ export default function NaplooPage() {
       {/* Stay Affordable Section */}
       <section className="py-20 bg-gradient-to-b from-background to-primary">
         <div className="container mx-auto px-4">
-          <motion.div 
+          <motion.div
             className="text-center mb-16"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Stay Affordable</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Stay Affordable
+            </h2>
             <div className="w-24 h-1 bg-secondary mx-auto mb-8"></div>
             <p className="text-lg max-w-3xl mx-auto">
-              Accommodation does not have to cost an exorbitant amount. Now everyone can afford a clean and comfortable place to stay, complete with top-notch services and facilities.
+              Accommodation does not have to cost an exorbitant amount. Now
+              everyone can afford a clean and comfortable place to stay,
+              complete with top-notch services and facilities.
             </p>
           </motion.div>
 
@@ -820,7 +902,7 @@ export default function NaplooPage() {
               transition={{ duration: 0.5 }}
               className="rounded-xl overflow-hidden shadow-2xl"
             >
-              <img 
+              <img
                 src="/attached_assets/image_1746605592399.png"
                 alt="Affordable Naploo Pod"
                 className="w-full h-full object-cover"
@@ -833,25 +915,36 @@ export default function NaplooPage() {
       {/* CTA Section */}
       <section className="py-16 bg-primary">
         <div className="container mx-auto px-4">
-          <motion.div 
+          <motion.div
             className="max-w-3xl mx-auto text-center"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Book Your Pod Now!</h2>
-            <p className="text-xl mb-10">Recharge smarter, not harder. Enjoy your personalized Naploo™ experience today.</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Book Your Pod Now!
+            </h2>
+            <p className="text-xl mb-10">
+              Recharge smarter, not harder. Enjoy your personalized Naploo™
+              experience today.
+            </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Button size="lg" variant="secondary">Book a Pod</Button>
+              <Button size="lg" variant="secondary">
+                Book a Pod
+              </Button>
               <Link href="/investor">
-                <Button size="lg" variant="outline">Invest in Naploo™</Button>
+                <Button size="lg" variant="outline">
+                  Invest in Naploo™
+                </Button>
               </Link>
             </div>
             <p className="mt-12 text-lg font-semibold">
               Naploo™ – "Your Private Space, Anytime."
               <br />
-              <span className="text-sm font-normal">Powered by BIDUA Industries Pvt Ltd</span>
+              <span className="text-sm font-normal">
+                Powered by BIDUA Industries Pvt Ltd
+              </span>
             </p>
           </motion.div>
         </div>
