@@ -168,14 +168,14 @@ export default function BiduaVenturesPage() {
           <p className="text-lg md:text-2xl max-w-2xl mb-6">
             Comprehensive Background Verification Services Across All Sectors - Building Trust Through Thorough Validation
           </p>
-          <Button className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 text-lg rounded-xl">
+          <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 text-lg rounded-xl">
             Start Verification
           </Button>
         </div>
       </section>
 
       {/* Why BIDUA Section */}
-      <section className="py-16 text-center bg-green-950 text-white">
+      <section className="py-16 text-center bg-blue-950 text-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">Why Choose BIDUA?</h2>
           <p className="text-xl md:text-2xl font-semibold mb-4">"Your Trust Is Our Priority"</p>
@@ -186,35 +186,35 @@ export default function BiduaVenturesPage() {
       </section>
 
       {/* Human Verification Service */}
-      <section className="py-8 md:py-16 bg-green-950/20">
+      <section className="py-8 md:py-16 bg-blue-950/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-8 md:mb-12">
             <h2 className="text-2xl md:text-5xl font-bold mb-4 md:mb-6">Human Verification Service</h2>
             <p className="text-lg md:text-xl px-2">Stop fraud before it happens. BIDUA verifies your maids, drivers, tenants, or employees physically across India.</p>
-            <Button className="mt-6 md:mt-8 w-full md:w-auto bg-green-600 hover:bg-green-700 text-white px-4 md:px-8 py-4 md:py-6 text-base md:text-lg rounded-xl">
+            <Button className="mt-6 md:mt-8 w-full md:w-auto bg-blue-600 hover:bg-blue-700 text-white px-4 md:px-8 py-4 md:py-6 text-base md:text-lg rounded-xl">
               Book Now – ₹999 per Person
             </Button>
           </div>
 
           {/* Why Critical */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-            <Card className="bg-black/40 border-green-800">
+            <Card className="bg-black/40 border-blue-800">
               <CardContent className="p-6 text-center">
-                <Shield className="w-12 h-12 text-green-500 mx-auto mb-4" />
+                <Shield className="w-12 h-12 text-blue-500 mx-auto mb-4" />
                 <h3 className="text-xl font-bold mb-3">Fraud Prevention</h3>
                 <p>Thousands of fraud and theft cases by unknown domestic workers and tenants reported each year.</p>
               </CardContent>
             </Card>
-            <Card className="bg-black/40 border-green-800">
+            <Card className="bg-black/40 border-blue-800">
               <CardContent className="p-6 text-center">
-                <Users className="w-12 h-12 text-green-500 mx-auto mb-4" />
+                <Users className="w-12 h-12 text-blue-500 mx-auto mb-4" />
                 <h3 className="text-xl font-bold mb-3">Identity Protection</h3>
                 <p>Fake IDs and unverifiable references are common in big cities and small towns alike.</p>
               </CardContent>
             </Card>
-            <Card className="bg-black/40 border-green-800">
+            <Card className="bg-black/40 border-blue-800">
               <CardContent className="p-6 text-center">
-                <AlertTriangle className="w-12 h-12 text-green-500 mx-auto mb-4" />
+                <AlertTriangle className="w-12 h-12 text-blue-500 mx-auto mb-4" />
                 <h3 className="text-xl font-bold mb-3">Risk Mitigation</h3>
                 <p>Hiring blindly puts your family, property, and business at risk.</p>
               </CardContent>
@@ -233,7 +233,7 @@ export default function BiduaVenturesPage() {
                 "Get verification report"
               ].map((step, index) => (
                 <div key={index} className="text-center">
-                  <div className="w-12 h-12 rounded-full bg-green-600 text-white flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                  <div className="w-12 h-12 rounded-full bg-blue-600 text-white flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                     {index + 1}
                   </div>
                   <p>{step}</p>
@@ -253,7 +253,7 @@ export default function BiduaVenturesPage() {
                 "Offices hiring contract or field staff"
               ].map((user, index) => (
                 <div key={index} className="text-center p-4">
-                  <CheckCircle className="w-8 h-8 text-green-500 mx-auto mb-3" />
+                  <CheckCircle className="w-8 h-8 text-blue-500 mx-auto mb-3" />
                   <p>{user}</p>
                 </div>
               ))}
@@ -263,7 +263,7 @@ export default function BiduaVenturesPage() {
           {/* CTA */}
           <div className="text-center">
             <h2 className="text-3xl font-bold mb-6">Start Verifying with BIDUA Today</h2>
-            <Button className="bg-green-600 hover:bg-green-700 text-white px-8 py-6 text-lg rounded-xl">
+            <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-xl">
               Book Verification Now
             </Button>
           </div>
@@ -276,10 +276,10 @@ export default function BiduaVenturesPage() {
           <h2 className="text-3xl md:text-5xl font-bold text-center mb-12">Verification Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {categories.map((category, idx) => (
-              <Card key={idx} className="bg-black/40 border-green-800">
+              <Card key={idx} className="bg-black/40 border-blue-800">
                 <CardContent className="p-6">
-                  <div className="text-green-400 text-3xl mb-3">{category.icon}</div>
-                  <h3 className="text-2xl font-bold text-green-400 mb-4">{category.title}</h3>
+                  <div className="text-blue-400 text-3xl mb-3">{category.icon}</div>
+                  <h3 className="text-2xl font-bold text-blue-400 mb-4">{category.title}</h3>
                   <ul className="list-disc list-inside space-y-2">
                     {category.items.map((item, i) => (
                       <li key={i} className="text-sm md:text-base opacity-90">{item}</li>
@@ -295,7 +295,7 @@ export default function BiduaVenturesPage() {
       {/* Service Details Modal */}
       <Dialog>
         <DialogTrigger asChild>
-          <Button className="bg-green-600 hover:bg-green-700 text-white px-8 py-6 text-lg rounded-full fixed bottom-8 right-8 z-50">
+          <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-full fixed bottom-8 right-8 z-50">
             <Shield className="w-5 h-5 mr-2" /> Book Verification Now
           </Button>
         </DialogTrigger>
@@ -310,27 +310,27 @@ export default function BiduaVenturesPage() {
           <div className="space-y-4 md:space-y-6 py-2 md:py-4">
             <div>
               <h3 className="text-lg font-semibold flex items-center gap-2">
-                <Search className="w-5 h-5 text-green-500" /> What We Offer
+                <Search className="w-5 h-5 text-blue-500" /> What We Offer
               </h3>
               <ul className="mt-2 space-y-2">
-                <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-500" /> Physical verification by a BIDUA agent</li>
-                <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-500" /> Visit to the given address</li>
-                <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-500" /> Live photo + video capture</li>
-                <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-500" /> ID proof validation (if provided)</li>
-                <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-500" /> Report uploaded within 48 hours</li>
+                <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-blue-500" /> Physical verification by a BIDUA agent</li>
+                <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-blue-500" /> Visit to the given address</li>
+                <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-blue-500" /> Live photo + video capture</li>
+                <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-blue-500" /> ID proof validation (if provided)</li>
+                <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-blue-500" /> Report uploaded within 48 hours</li>
               </ul>
             </div>
 
             <div>
               <h3 className="text-lg font-semibold flex items-center gap-2">
-                <IndianRupee className="w-5 h-5 text-green-500" /> Price
+                <IndianRupee className="w-5 h-5 text-blue-500" /> Price
               </h3>
               <p className="mt-2 text-2xl font-bold">₹999 per person / verification</p>
             </div>
 
             <div>
               <h3 className="text-lg font-semibold flex items-center gap-2">
-                <Settings2 className="w-5 h-5 text-green-500" /> How It Works
+                <Settings2 className="w-5 h-5 text-blue-500" /> How It Works
               </h3>
               <ol className="mt-2 space-y-2 list-decimal list-inside">
                 <li>Fill verification form online</li>
@@ -343,20 +343,20 @@ export default function BiduaVenturesPage() {
 
             <div>
               <h3 className="text-lg font-semibold flex items-center gap-2">
-                <Users className="w-5 h-5 text-green-500" /> Who Needs It
+                <Users className="w-5 h-5 text-blue-500" /> Who Needs It
               </h3>
               <ul className="mt-2 grid grid-cols-1 md:grid-cols-2 gap-2">
-                <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-500" /> Families hiring help</li>
-                <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-500" /> Businesses & offices</li>
-                <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-500" /> Landlords</li>
-                <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-500" /> Property buyers/sellers</li>
+                <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-blue-500" /> Families hiring help</li>
+                <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-blue-500" /> Businesses & offices</li>
+                <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-blue-500" /> Landlords</li>
+                <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-blue-500" /> Property buyers/sellers</li>
               </ul>
             </div>
           </div>
 
           <DialogFooter>
             <Link href="/human-verification">
-              <Button className="w-full bg-green-600 hover:bg-green-700 text-white py-6 text-lg">
+              <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-6 text-lg">
                 Book Verification Now – ₹999
               </Button>
             </Link>
@@ -373,11 +373,11 @@ export default function BiduaVenturesPage() {
           </p>
           <div className="flex flex-col md:flex-row items-center justify-center gap-6">
             <Link href="/human-verification">
-              <Button className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-xl">
+              <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl">
                 Book Verification
               </Button>
             </Link>
-            <Button className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-xl">
+            <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl">
               Contact Support
             </Button>
           </div>
@@ -407,7 +407,7 @@ export default function BiduaVenturesPage() {
                 a: "Yes, you can submit separate bookings for each individual."
               }
             ].map((faq, index) => (
-              <div key={index} className="bg-black/40 border border-green-800 rounded-lg p-6">
+              <div key={index} className="bg-black/40 border border-blue-800 rounded-lg p-6">
                 <h3 className="text-lg font-bold mb-2">{faq.q}</h3>
                 <p className="text-muted-foreground">{faq.a}</p>
               </div>
