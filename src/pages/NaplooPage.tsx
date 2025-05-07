@@ -76,6 +76,67 @@ export default function NaplooPage() {
         </div>
       </section>
 
+      {/* Reception Section */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <motion.div 
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Futuristic Reception Area</h2>
+            <div className="w-24 h-1 bg-secondary mx-auto mb-8"></div>
+            <p className="text-lg max-w-3xl mx-auto">
+              Experience the future of hospitality in our state-of-the-art reception area
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="space-y-6"
+            >
+              <div className="bg-card p-6 rounded-lg">
+                <h3 className="text-xl font-bold mb-4">Modern Check-in Experience</h3>
+                <ul className="space-y-3">
+                  <li className="flex items-start">
+                    <Check className="text-secondary mr-2 mt-1 flex-shrink-0" />
+                    <span>Automated check-in kiosks</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Check className="text-secondary mr-2 mt-1 flex-shrink-0" />
+                    <span>Digital payment systems</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Check className="text-secondary mr-2 mt-1 flex-shrink-0" />
+                    <span>24/7 customer support</span>
+                  </li>
+                </ul>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="rounded-2xl overflow-hidden shadow-2xl"
+            >
+              <img 
+                src="/attached_assets/image_1746604463368.png"
+                alt="Naploo Futuristic Reception"
+                className="w-full h-full object-cover"
+              />
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* Pod Features Section */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
