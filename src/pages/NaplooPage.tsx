@@ -89,11 +89,52 @@ export default function NaplooPage() {
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Futuristic Reception Area</h2>
             <div className="w-24 h-1 bg-secondary mx-auto mb-8"></div>
             <p className="text-lg max-w-3xl mx-auto">
-              Experience the future of hospitality in our state-of-the-art reception area
+              Step into the future with our cutting-edge reception space featuring hexagonal lighting and smart amenities
             </p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="p-6 bg-card rounded-xl"
+            >
+              <h3 className="text-2xl font-bold mb-4">Sci-Fi Inspired Design</h3>
+              <ul className="space-y-4">
+                <li className="flex items-start">
+                  <Check className="text-secondary mr-2 mt-1 flex-shrink-0" />
+                  <span>Geometric hexagonal ceiling pattern with LED lighting</span>
+                </li>
+                <li className="flex items-start">
+                  <Check className="text-secondary mr-2 mt-1 flex-shrink-0" />
+                  <span>Smart digital check-in kiosks with blue accent lighting</span>
+                </li>
+                <li className="flex items-start">
+                  <Check className="text-secondary mr-2 mt-1 flex-shrink-0" />
+                  <span>Modern angular furniture with metallic finish</span>
+                </li>
+                <li className="flex items-start">
+                  <Check className="text-secondary mr-2 mt-1 flex-shrink-0" />
+                  <span>Interactive digital wall displays</span>
+                </li>
+              </ul>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="rounded-xl overflow-hidden shadow-2xl"
+            >
+              <img 
+                src="/attached_assets/image_1746604463368.png"
+                alt="Naploo Futuristic Reception"
+                className="w-full h-[400px] object-cover"
+              />
+            </motion.div>
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
