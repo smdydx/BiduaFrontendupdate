@@ -13,7 +13,7 @@ export default defineConfig({
       clientPort: 443,
       host: true
     },
-    allowedHosts: ["a9705172-2ffd-4245-9b58-2f7cb303fe57-00-324kpszqylnwp.sisko.replit.dev"]
+    allowedHosts: ["47eead9e-92ae-4211-9bb2-9311d03d1738-00-124wsa9was5me.sisko.replit.dev"]
   },
   plugins: [react(), runtimeErrorOverlay()],
   resolve: {
