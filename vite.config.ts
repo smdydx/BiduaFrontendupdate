@@ -6,7 +6,13 @@ export default defineConfig({
   assetsInclude: ['**/*.jpeg'],
   server: {
     host: "0.0.0.0",
-    port: 5173
+    port: 5173,
+    hmr: {
+      clientPort: 443, // Ensure HMR works correctly
+    },
+    allowedHosts: [
+      "biduafrontendupdate.onrender.com", // Add this host
+    ],
   },
   plugins: [react()],
   resolve: {
@@ -31,6 +37,5 @@ export default defineConfig({
         },
       },
     },
-  
   },
 });
