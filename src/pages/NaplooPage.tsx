@@ -164,7 +164,7 @@ export default function NaplooPage() {
               className="rounded-xl overflow-hidden shadow-2xl"
             >
               <img
-                src="../assets/NaplooImg/1.jpg"
+                src="/assets/NaplooImg/1.jpg"
                 alt="Naploo Futuristic Reception"
                 className="w-full h-[400px] object-cover"
               />
@@ -205,7 +205,7 @@ export default function NaplooPage() {
               className="rounded-2xl overflow-hidden shadow-2xl"
             >
               <img
-                src="../assets/NaplooImg/2.jpg"
+                src="/assets/NaplooImg/2.jpg"
                 alt="Naploo Futuristic Reception"
                 className="w-full h-full object-cover"
               />
@@ -238,38 +238,38 @@ export default function NaplooPage() {
             {[
               {
                 image:
-                  "../assets/NaplooImg/3.jpg",
+                  "/assets/NaplooImg/3.jpg",
                 title: "Luxury Pod Design",
                 description:
                   "Premium comfort with modern amenities for the perfect rest",
               },
               {
                 image:
-                  "../assets/NaplooImg/4.jpg",
+                  "/assets/NaplooImg/4.jpg",
                 title: "Smart Pod Experience",
                 description: "Integrated technology for a seamless stay",
               },
               {
-                image: "../assets/NaplooImg/5.jpg",
+                image: "/assets/NaplooImg/5.jpg",
                 title: "Executive Pod",
                 description:
                   "Designed for business travelers with work facilities",
               },
               {
                 image:
-                  "../assets/NaplooImg/6.jpg",
+                  "/assets/NaplooImg/6.jpg",
                 title: "Premium Rest Pod",
                 description: "Enhanced comfort with climate control",
               },
               {
                 image:
-                  "../assets/NaplooImg/7.jpg",
+                  "/assets/NaplooImg/7.jpg",
                 title: "Deluxe Sleep Pod",
                 description: "Spacious interior with luxury furnishings",
               },
               {
                 image:
-                  "../assets/NaplooImg/8.jpg",
+                  "/assets/NaplooImg/8.jpg",
                 title: "Elite Pod Suite",
                 description: "Our most premium pod experience",
               },
@@ -904,7 +904,7 @@ export default function NaplooPage() {
               className="rounded-xl overflow-hidden shadow-2xl"
             >
               <img
-                src="../assets/NaplooImg/main.jpeg"
+                src="/assets/NaplooImg/main.jpeg"
                 alt="Affordable Naploo Pod"
                 className="w-full h-full object-cover"
               />
