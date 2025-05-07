@@ -1,6 +1,4 @@
 import { Route, Switch, useLocation } from "wouter";
-import { queryClient } from "./lib/queryClient";
-import { QueryClientProvider } from "@tanstack/react-query";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
 import AboutPage from "@/pages/AboutPage";
@@ -47,9 +45,6 @@ import AllAdmins from "./admin panel/sidebar/admin/AllAdmins";
 import Profile from "./admin panel/sidebar/settings/Profile";
 
 function Router() {
-  const [location] = useLocation();
-  const isAdminRoute = location.startsWith("/admin");
-
   return (
     <Switch>
       {/* Public Routes */}
@@ -66,75 +61,70 @@ function Router() {
       <Route path="/human-verification" component={HumanVerification} />
       <Route path="/contact" component={ContactPage} />
 
-      {/* Admin Routes - Protected */}
-      <ProtectedRoute path="/admin" component={AdminDashboard} adminOnly={true} />
-      <ProtectedRoute path="/admin/admindashboard" component={AdminDashboard} adminOnly={true} />
-
-      <ProtectedRoute path="/admin/alleads" adminOnly={true} component={() => (
+      {/* Admin Routes */}
+      <ProtectedRoute path="/admin" component={AdminDashboard} />
+      <ProtectedRoute path="/admin/admindashboard" component={AdminDashboard} />
+      <ProtectedRoute path="/admin/alleads" component={() => (
         <AdminLayout><AllLeads /></AdminLayout>
       )}/>
-      <ProtectedRoute path="/admin/naplooleads" adminOnly={true} component={() => (
+      <ProtectedRoute path="/admin/naplooleads" component={() => (
         <AdminLayout><NaplooLeads /></AdminLayout>
       )}/>
-      <ProtectedRoute path="/admin/oemleads" adminOnly={true} component={() => (
+      <ProtectedRoute path="/admin/oemleads" component={() => (
         <AdminLayout><OEMLeads /></AdminLayout>
       )}/>
-      <ProtectedRoute path="/admin/beautyleads" adminOnly={true} component={() => (
+      <ProtectedRoute path="/admin/beautyleads" component={() => (
         <AdminLayout><BeautyLeads /></AdminLayout>
       )}/>
-      <ProtectedRoute path="/admin/clouddriveleads" adminOnly={true} component={() => (
+      <ProtectedRoute path="/admin/clouddriveleads" component={() => (
         <AdminLayout><CloudDriveLeads /></AdminLayout>
       )}/>
-      <ProtectedRoute path="/admin/itconnectleads" adminOnly={true} component={() => (
+      <ProtectedRoute path="/admin/itconnectleads" component={() => (
         <AdminLayout><ITConnectLeads /></AdminLayout>
       )}/>
-
-      <ProtectedRoute path="/admin/alltickets" adminOnly={true} component={() => (
+      <ProtectedRoute path="/admin/alltickets" component={() => (
         <AdminLayout><AllTicket /></AdminLayout>
       )}/>
-      <ProtectedRoute path="/admin/tickets/id/:id" adminOnly={true} component={() => (
+      <ProtectedRoute path="/admin/tickets/id/:id" component={() => (
         <AdminLayout><IdTickets /></AdminLayout>
       )}/>
-
-      <ProtectedRoute path="/admin/addproducts" adminOnly={true} component={() => (
+      <ProtectedRoute path="/admin/addproducts" component={() => (
         <AdminLayout><AddProduct /></AdminLayout>
       )}/>
-      <ProtectedRoute path="/admin/viewproducts" adminOnly={true} component={() => (
+      <ProtectedRoute path="/admin/viewproducts" component={() => (
         <AdminLayout><ViewProduct /></AdminLayout>
       )}/>
-
-      <ProtectedRoute path="/admin/allorders" adminOnly={true} component={() => (
+      <ProtectedRoute path="/admin/allorders" component={() => (
         <AdminLayout><AllOrders /></AdminLayout>
       )}/>
-      <ProtectedRoute path="/admin/pendingorder" adminOnly={true} component={() => (
+      <ProtectedRoute path="/admin/pendingorder" component={() => (
         <AdminLayout><PendingOrders /></AdminLayout>
       )}/>
-      <ProtectedRoute path="/admin/shippedorder" adminOnly={true} component={() => (
+      <ProtectedRoute path="/admin/shippedorder" component={() => (
         <AdminLayout><ShippedOrders /></AdminLayout>
       )}/>
-      <ProtectedRoute path="/admin/deliveredorder" adminOnly={true} component={() => (
+      <ProtectedRoute path="/admin/deliveredorder" component={() => (
         <AdminLayout><DeliveredOrders /></AdminLayout>
       )}/>
-      <ProtectedRoute path="/admin/cancelledorder" adminOnly={true} component={() => (
+      <ProtectedRoute path="/admin/cancelledorder" component={() => (
         <AdminLayout><CancelledOrders /></AdminLayout>
       )}/>
-
-      <ProtectedRoute path="/admin/allpartners" adminOnly={true} component={() => (
+      <ProtectedRoute path="/admin/allpartners" component={() => (
         <AdminLayout><AllPartners /></AdminLayout>
       )}/>
-      <ProtectedRoute path="/admin/customers" adminOnly={true} component={() => (
+      <ProtectedRoute path="/admin/customers" component={() => (
         <AdminLayout><Customers /></AdminLayout>
       )}/>
-      <ProtectedRoute path="/admin/investors" adminOnly={true} component={() => (
+      <ProtectedRoute path="/admin/investors" component={() => (
         <AdminLayout><Investors /></AdminLayout>
       )}/>
-      <ProtectedRoute path="/admin/distributors" adminOnly={true} component={() => (
+      <ProtectedRoute path="/admin/distributors" component={() => (
         <AdminLayout><Distributors /></AdminLayout>
       )}/>
-      <ProtectedRoute path="/admin/alladmins" adminOnly={true} component={() => (
+      <ProtectedRoute path="/admin/alladmins" component={() => (
         <AdminLayout><AllAdmins /></AdminLayout>
       )}/>
-      <ProtectedRoute path="/admin/profile" adminOnly={true} component={() => (
+      <ProtectedRoute path="/admin/profile" component={() => (
         <AdminLayout><Profile /></AdminLayout>
       )}/>
 
@@ -147,26 +137,23 @@ function Router() {
 function App() {
   const [location] = useLocation();
   const isAdminRoute = location.startsWith("/admin");
-  console.log("URL:", location, "isAdminRoute:", isAdminRoute);
 
   return (
-    <QueryClientProvider client={queryClient}>
-      <AuthProvider>
-        <div className="min-h-screen flex flex-col">
-          {!isAdminRoute && <Header />}
+    <AuthProvider>
+      <div className="min-h-screen flex flex-col">
+        {!isAdminRoute && <Header />}
 
-          <main className={isAdminRoute ? "flex" : "flex-grow"}>
-            <div className="flex-1">
-              <Suspense fallback={<LoadingSpinner />}>
-                <Router />
-              </Suspense>
-            </div>
-          </main>
+        <main className={isAdminRoute ? "flex" : "flex-grow"}>
+          <div className="flex-1">
+            <Suspense fallback={<LoadingSpinner />}>
+              <Router />
+            </Suspense>
+          </div>
+        </main>
 
-          {!isAdminRoute && <Footer />}
-        </div>
-      </AuthProvider>
-    </QueryClientProvider>
+        {!isAdminRoute && <Footer />}
+      </div>
+    </AuthProvider>
   );
 }
 
