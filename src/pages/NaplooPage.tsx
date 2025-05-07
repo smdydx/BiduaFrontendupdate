@@ -94,6 +94,22 @@ export default function NaplooPage() {
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="w-full mb-12"
+            >
+              <div className="rounded-xl overflow-hidden shadow-lg">
+                <img 
+                  src="https://i2.kknews.cc/U7A6Q9vWlueLE2m1HmUBkY9jlxTRPHX7og/0.jpg"
+                  alt="Naploo Reception"
+                  className="w-full h-[400px] object-cover"
+                />
+              </div>
+            </motion.div>
+
             {[
               {
                 icon: Sparkles,
