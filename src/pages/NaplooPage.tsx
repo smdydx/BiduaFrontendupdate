@@ -19,9 +19,9 @@ import {
   Star,
 } from "lucide-react";
 import mainImage from "/assets/NaplooImg/main.jpg";
-import img1 from "/assets/NaplooImg/1.jpg";
-import img2 from "/assets/NaplooImg/2.jpg";
-import img3 from "/assets/NaplooImg/9.jpg";
+import img1 from "/assets/NaplooImg/maina.jpg";
+import img2 from "/assets/NaplooImg/mainb.jpg";
+import img3 from "/assets/NaplooImg/mainc.jpg";
 //import img4 from '../assets/NaplooImg/4.jpg';
 import img5 from "/assets/NaplooImg/5.jpg";
 import img6 from "/assets/NaplooImg/6.jpg";
@@ -164,7 +164,7 @@ export default function NaplooPage() {
               className="rounded-xl overflow-hidden shadow-2xl"
             >
               <img
-                src="/assets/NaplooImg/1.jpg"
+                src="/assets/NaplooImg/maina.jpg"
                 alt="Naploo Futuristic Reception"
                 className="w-full h-[400px] object-cover"
               />
@@ -205,7 +205,7 @@ export default function NaplooPage() {
               className="rounded-2xl overflow-hidden shadow-2xl"
             >
               <img
-                src="/assets/NaplooImg/2.jpg"
+                src="/assets/NaplooImg/mainb.jpg"
                 alt="Naploo Futuristic Reception"
                 className="w-full h-full object-cover"
               />
@@ -238,7 +238,7 @@ export default function NaplooPage() {
             {[
               {
                 image:
-                  "/assets/NaplooImg/3.jpg",
+                  "/assets/NaplooImg/mainc.jpg",
                 title: "Luxury Pod Design",
                 description:
                   "Premium comfort with modern amenities for the perfect rest",
@@ -904,7 +904,7 @@ export default function NaplooPage() {
               className="rounded-xl overflow-hidden shadow-2xl"
             >
               <img
-                src="/assets/NaplooImg/main.jpeg"
+                src="/assets/NaplooImg/5.jpeg"
                 alt="Affordable Naploo Pod"
                 className="w-full h-full object-cover"
               />
