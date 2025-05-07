@@ -18,15 +18,16 @@ import {
   ShieldCheck,
   Star,
 } from "lucide-react";
-import mainImage from "../assets/NaplooImg/main.jpeg";
+import mainImage from "../assets/NaplooImg/main.jpg";
 import img1 from "../assets/NaplooImg/1.jpg";
 import img2 from "../assets/NaplooImg/2.jpg";
-import img3 from "../assets/NaplooImg/3.jpg";
-// import img4 from '../assets/NaplooImg/4.jpg';
+import img3 from "../assets/NaplooImg/9.jpg";
+//import img4 from '../assets/NaplooImg/4.jpg';
 import img5 from "../assets/NaplooImg/5.jpg";
 import img6 from "../assets/NaplooImg/6.jpg";
 import img7 from "../assets/NaplooImg/7.jpg";
 import img8 from "../assets/NaplooImg/8.jpg";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -903,7 +904,7 @@ export default function NaplooPage() {
               className="rounded-xl overflow-hidden shadow-2xl"
             >
               <img
-                src="/attached_assets/image_1746605592399.png"
+                src="../assets/NaplooImg/main.jpeg"
                 alt="Affordable Naploo Pod"
                 className="w-full h-full object-cover"
               />
