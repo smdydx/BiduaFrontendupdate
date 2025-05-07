@@ -13,7 +13,7 @@ export default defineConfig({
     },
     allowedHosts: [
       "47eead9e-92ae-4211-9bb2-9311d03d1738-00-124wsa9was5me.sisko.replit.dev",
-      "biduafrontendupdate.onrender.com" // Add this host
+      "biduafrontendupdate.onrender.com"
     ]
   },
   plugins: [react(), runtimeErrorOverlay()],
@@ -29,7 +29,16 @@ export default defineConfig({
     outDir: path.resolve(import.meta.dirname, "dist/public"),
     emptyOutDir: true,
     rollupOptions: {
-      external: ['class-variance-authority'], // Externalize the dependency
+      external: ['class-variance-authority'],
+      output: {
+        manualChunks: {
+          // Split vendor libraries into a separate chunk
+          vendor: ['react', 'react-dom', '@tanstack/react-query'],
+          // Split other large libraries
+          ui: ['@radix-ui/react-toast', '@radix-ui/react-dialog'],
+        },
+      },
     },
+    chunkSizeWarningLimit: 1000, // Increase the warning limit to 1000 kB
   },
 });
