@@ -198,34 +198,34 @@ export default function NaplooPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                image: "https://images.squarespace-cdn.com/content/v1/5d9e5e58d36b747659e47b0f/1574787502568-KP4LZTH7RBQ4FZFO93L1/sleeping+pod+dimensions.png",
-                title: "Spacious Interior Design",
-                description: "Ergonomically designed interior with ample space for comfortable rest"
+                image: "/attached_assets/WhatsApp Image 2025-04-26 at 12.25.07 PM.jpeg",
+                title: "Luxury Pod Design",
+                description: "Premium comfort with modern amenities for the perfect rest"
               },
               {
-                image: "https://img.freepik.com/premium-photo/futuristic-sleeping-pod-capsule-hotel-3d-render_252025-308.jpg",
-                title: "Futuristic Pod Experience",
-                description: "Modern amenities with smart lighting and entertainment systems"
+                image: "/attached_assets/WhatsApp Image 2025-04-26 at 12.25.07 PM (1).jpeg",
+                title: "Smart Pod Experience",
+                description: "Integrated technology for a seamless stay"
               },
               {
-                image: "https://i.pinimg.com/originals/fb/d9/c4/fbd9c47d0bf683ef4761755362d46941.jpg",
-                title: "Premium Comfort",
-                description: "High-quality mattress and bedding for ultimate relaxation"
+                image: "/attached_assets/WhatsApp Image 2025-04-26 at 12.25.07 PM (2).jpeg",
+                title: "Executive Pod",
+                description: "Designed for business travelers with work facilities"
               },
               {
-                image: "https://static.dezeen.com/uploads/2016/10/sleep-box-moscow-airport-arch-group_dezeen_2364_ss_1-852x608.jpg",
-                title: "Airport Sleep Pod",
-                description: "Perfect for transit passengers seeking quick rest"
+                image: "/attached_assets/WhatsApp Image 2025-04-26 at 12.25.08 PM.jpeg",
+                title: "Premium Rest Pod",
+                description: "Enhanced comfort with climate control"
               },
               {
-                image: "https://media.timeout.com/images/105793281/image.jpg",
-                title: "Business Pod",
-                description: "Equipped with work desk and charging stations"
+                image: "/attached_assets/WhatsApp Image 2025-04-26 at 12.25.08 PM (1).jpeg",
+                title: "Deluxe Sleep Pod",
+                description: "Spacious interior with luxury furnishings"
               },
               {
-                image: "https://static.straitstimes.com.sg/s3fs-public/articles/2019/08/21/st_20190821_lcpod21_5135272.jpg",
-                title: "Premium Single Pod",
-                description: "Private space with enhanced soundproofing"
+                image: "/attached_assets/WhatsApp Image 2025-04-26 at 12.25.08 PM (2).jpeg",
+                title: "Elite Pod Suite",
+                description: "Our most premium pod experience"
               }
             ].map((pod, index) => (
               <motion.div
